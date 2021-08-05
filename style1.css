@@ -93,11 +93,14 @@ h4{
     
 }
 
-.content22 input {
+/* .content22 */
+ input {
     border: none;
     border-bottom: solid 2px #d6d6d6;
     margin: 30px 0px 2px 20px;
+    width: 90%;
 }
+
 .content22 .content2a {
     background-color: #f5f5f5;
     padding: 15px 15px 15px 30px
@@ -179,7 +182,7 @@ h4{
 }
   .iconn i {
       z-index: 2;
-      margin: 2% 2% 2% 2.6%;
+      margin: 3% 3% 3% 3%;
   }
   .secction{
     margin-bottom: 10px;
@@ -209,16 +212,25 @@ h4{
     padding-top: 120px;
     /* margin-top:0px; */
     position: static;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
    
   }
 
   /* awesome */
+  @font-face {
+    font-family: 'MyriadPro';
+    src: url(./MYRIADPRO-REGULAR.OTF);
+  }
   .awesome {
+    /* margin-top: 105px; */
     text-align: center;
-    padding-top: 10%;
-    padding-bottom: 100px;;
+     padding-top: 105px; 
+    margin-bottom: 105px;
+    font-family: 'MyriadPro';
     position: static;
+  }
+  .awesome h1 {
+    font-family: 'Raleway', sans-serif;
   }
   .awesome .iconn {
     display: block;
@@ -281,3 +293,109 @@ h4{
     float: right;
     margin-left: 14px;
   }
+/*  */
+  .stylelist{
+    position: relative;
+  }
+  .image-box__background,
+  .image-box__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 321px;
+  }
+  .image-box__background {
+    background: var(--image-url) center center no-repeat;
+    background-size: auto;
+    
+    z-index: 1
+  }
+  .image-box__overlay {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    height: 310px;
+    
+  }
+  
+  /* 
+  The content div is at the top of our stack. 
+  We'd probably add some padding or flexbox properties here as well, 
+  to place the content appropriately
+  */
+  
+ 
+  
+  .stylelist .awesome {
+    position: relative;
+  
+    z-index: 3;
+  
+    /* Finally, style and place the content */
+    color: white;
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 321px;
+    padding-top: 10px;
+    font-family: 'MyriadPro';
+  }
+  /*  */
+  /* .imgstyle img{
+     position: absolute; 
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+   
+    
+  } */
+  /* .stylelist .awesome{
+    color: white;
+   
+  } */
+
+  textarea{
+    border: none;
+    border-bottom: solid 2px #d6d6d6;
+    margin: 30px 0px 2px 25px;
+    margin-left: 25px;
+    
+}
+.contact{
+  margin-bottom: 80px;
+}
+.contact p {
+  margin-bottom: 90px;
+}
+.contact p,h1 {
+  text-align: center;
+}
+.input input{
+  margin-bottom: 58px;
+}
+#btnsend{
+ 
+  background-color: orange;
+  border-radius: 1px;
+  border-color: orangered;
+  margin-left: 45%;
+
+}
+footer{
+  background-color: black;
+  padding-top: 25px;
+  padding-bottom:25px;
+  padding-left: 0;
+}
+footer ul{
+  padding: 0 0 0 0 ;
+  padding-left: 31px;
+  margin-left: 0;
+  
+}
+footer ul li {
+  margin-right: 45px;
+  display: inline;
+  color: white;
+}
+  
