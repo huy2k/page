@@ -5,6 +5,7 @@ body {
   }
   h3 {
     font-family: 'Raleway', sans-serif;
+    font-size: 8.64pt;
   }
   h5 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -32,11 +33,7 @@ body {
 .header .menu a {
     color: #b0b0b0 ;
 }
-h3{
-  font:bold;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 11.34px;
-}
+
 h4{
   font:bold;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -108,7 +105,11 @@ h4{
   .banner .content1 h3 {
     margin-top:30px;
     margin-bottom: 35px;
+    width: 80%;
+    margin-left: 0;
+    text-align: left;
   }
+  
   .banner .content1 p{
     margin-top: 30px;
   }
@@ -122,6 +123,13 @@ h4{
     cursor:pointer;
     overflow: hidden;  
     color: white;
+  }
+
+  #btn1:hover{
+    background-color: orange;
+  border-color: orange;
+  border-width: 5px;
+  cursor: pointer;
   }
 
   .content2 {
@@ -199,24 +207,32 @@ input :hover::before {
  /* tab */
   .cl1 {
       width: 66%;
-      height: 110px;
+      height: 116px;
       background-color: orange;
       color: white;
       text-align: center;
-      padding-top: 35px;
+      padding-top: 40px;
       margin-top: 145px;
   }
   .cl2{
     width: 66%;
-    height: 110px;
+    height: 116px;
     background-color: black;
     color: white;
     border-top: solid 1px blanchedalmond;
     text-align: center;
-    padding-top: 35px;
+    padding-top: 40px;
   }
   .tab .tabtext {
     margin-top: 145px;
+
+  }
+  .tab .tabtext h4{
+    margin-bottom: 50px;
+  }
+  .tab .tabtext button{
+    margin-top: 40px;
+    
   }
  .iconn{
      float: left;
@@ -252,7 +268,8 @@ input :hover::before {
       margin: 3% 3% 3% 3%;
   }
   .secction{
-    margin-bottom: 10px;
+    padding-top: 120px;
+    margin-bottom: 100px;
   }
   /* .sublist{
     margin-bottom: 0px;
@@ -264,10 +281,7 @@ input :hover::before {
   .feature2 .list {
       margin-left: 50px;
   }
-  .secction {
-      padding-top: 120px;
-     
-  }
+  
    .image {
       padding-top: 5px;
   }
@@ -277,6 +291,7 @@ input :hover::before {
     background-color: #f5f5f5;
     /* margin: 0; */
     padding-top: 120px;
+    padding-bottom:100px;
     margin-bottom: 120px;
     /* height: 600px; */
     /* margin-top:0px; */
@@ -298,6 +313,9 @@ input :hover::before {
     margin-bottom: 105px;
     font-family: 'MyriadPro';
     /* position: static; */
+  }
+  .awesome .listawe{
+    margin-top: 40px;
   }
   .awesome h1 {
     font-family: 'Raleway', sans-serif;
@@ -324,6 +342,9 @@ input :hover::before {
     background-color: black;
     /* height: 400px; */
     
+  }
+  #Pricing{
+    padding-bottom: 100px;
   }
   .priceOption1 h5 {
     margin-bottom: 15px;
@@ -362,6 +383,9 @@ input :hover::before {
   .nameperson{
     float: right;
     margin-left: 14px;
+  }
+  .review{
+    margin-top: 50px;
   }
 /*  */
   .stylelist{
@@ -413,6 +437,11 @@ input :hover::before {
     padding-top: 10px;
     font-family: 'MyriadPro';
   }
+  .stylelist .awesome h3{
+    font-family: 'Raleway', sans-serif;
+    /* font-size: 8.64pt; */
+    
+  }
   /*  */
   /* .imgstyle img{
      position: absolute; 
@@ -438,7 +467,7 @@ input :hover::before {
 .contact p {
   margin-bottom: 90px;
 }
-.contact p,h1 {
+.contact p,h3 {
   text-align: center;
 }
 .input input{
@@ -453,6 +482,13 @@ input :hover::before {
   margin-left: 43%;
   color: white;
 
+}
+
+#btnsend:hover {
+  background-color: #ee4b08;
+  border-color: #ee4b08;
+  border-width: 5px;
+  cursor: pointer;
 }
 footer{
   background-color: black;
@@ -483,12 +519,12 @@ footer ul li {
   100%  { top:20px; top:0px;}
 }
 
-#error {
-  display: none;
-  /* visibility: hidden; */
+.error {
+  
+  visibility: hidden;
   margin-top: 35px;
   color: red;
 }
-.contact #error{
+.contact .error{
   margin-top: 0;
 }
