@@ -8,21 +8,34 @@ const emailll = document.getElementById('email1').value;
     if( document.getElementById('name1').value == '' ){
       document.getElementsByClassName('error')[3].style.visibility='initial'; 
       }
-      if( document.getElementById('email1').value == '' || !validateEmail(emailll) ){
+      else if( document.getElementById('email1').value == '' ){
         document.getElementsByClassName('error')[4].style.visibility='initial'; 
       } 
+      else{
+        alert("succsess");
+        document.getElementsByClassName('error')[3].style.visibility='hidden'; 
+        document.getElementsByClassName('error')[4].style.visibility='hidden'; 
+        document.getElementsByClassName('error')[5].style.visibility='hidden'; 
+      }
+
     
   }
   function checkemptyTrial(){
     if( document.getElementById('name').value == '' ){
         document.getElementsByClassName('error')[0].style.visibility='initial'; 
       }
-    if( document.getElementById('Email').value == '' ){
+    else if( document.getElementById('Email').value == '' ){
       document.getElementsByClassName('error')[1].style.visibility='initial'; 
       } 
-    if( document.getElementById('txtPass').value == '' ){
+    else if( document.getElementById('txtPass').value == '' ){
       document.getElementsByClassName('error')[2].style.visibility='initial'; 
       } 
+     else{
+      alert("succsess");
+      document.getElementsByClassName('error')[0].style.visibility='hidden'; 
+      document.getElementsByClassName('error')[1].style.visibility='hidden'; 
+      document.getElementsByClassName('error')[2].style.visibility='hidden'; 
+     } 
       // else{ alert("succsess")}
   }
   
