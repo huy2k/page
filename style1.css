@@ -79,6 +79,7 @@ h4{
   .content {
     z-index: 3;
     position: relative;
+    padding-top: 120px;
   }
 /*  */
 
@@ -188,6 +189,9 @@ input :hover::before {
  }
   .social {
     margin-top: 30px;
+  }
+  .social h3{
+    text-align: left;
   }
   .location_icon{
     margin-bottom: 30px;
