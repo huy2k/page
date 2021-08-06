@@ -20,7 +20,8 @@ body {
    
 }
 .menu a{
-    color: white;
+    color: #b0b0b0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .header .menu  {
@@ -56,14 +57,40 @@ h4{
     /* background: rgb(79,79,82); */
      background-image: linear-gradient(90deg, rgba(79,79,82,1) 0%, rgba(227,233,233,1) 100%, rgba(238,232,232,1) 100%); 
   }
+/* test  */
+.imgbanner,
+  .banner__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    
+  }
+  .imgbanner {
+    background: var(--image-url) center center no-repeat;
+    background-size: auto;
+    
+    z-index: 1
+  }
+  .banner__overlay {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    /* height: 310px; */
+    
+  }
+  .content {
+    z-index: 3;
+    position: relative;
+  }
+/*  */
 
-  .banner .imgbanner img{
+  /* .banner .imgbanner img{
     position: absolute;
     width: 100%;
-    height: 100%; /*640px*/
-    background-blend-mode: overlay;
-       
-}
+    height: 100%; 
+    background-blend-mode: overlay;      
+} */
   
 
 .banner .content1 {
@@ -76,10 +103,10 @@ h4{
   .banner .content1 img {
     width: 180px;
     height: 60px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
   }
   .banner .content1 h3 {
-    margin-top:80px;
+    margin-top:30px;
     margin-bottom: 35px;
   }
   .banner .content1 p{
