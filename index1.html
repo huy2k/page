@@ -13,10 +13,10 @@
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
     <title>Document</title>
-    
+    <script src="style.js"></script>
 </head>
 <body>
-    <div class="header">
+    <!-- <div class="header">
         <div class="container">
             <div class="row">
                 <div class="col-sm-7 col-2 logo">
@@ -40,11 +40,27 @@
                     </div>
             </div>
         </div>
-    </div>
-    
+    </div> -->
+    <nav class="navbar navbar-expand-md navbar bg" style="background-color: #000000; ">
+        <div class="container">
+            
+                <a href="#" class="col-sm-7 navbar-brand"><img src="logo_navbar.png" alt="" width="80px" height="30px"></a>
+                <ul class="col-sm-5 navbar-nav mx-auto menu">
+                <li class="nav-item"><a href="#bann" class="nav-link ">Features</a></li>
+                <li class="nav-item"><a href="#Aboutt" class="nav-link about" style="margin-left: 24px;">About</a></li>
+                <li class="nav-item"><a href="#Pricing" class="nav-link" style="margin-left: 24px;">Pricing</a></li>
+                <li class="nav-item"><a href="#Reviews" class="nav-link" style="margin-left: 24px;">Reviews</a></li>
+                <li class="nav-item"><a href="#Contact" class="nav-link" style="margin-left: 24px;">Contact</a></li>
+                </ul>
+            
+        </div>
+        
+       
+    </nav>
+
     
     <!-- banner -->
-    <div class="banner" >
+    <div class="banner" id="bann" >
         <div class="imgbanner">
             <img src="banner.jpg"  alt="">
      <div class="container content">
@@ -72,17 +88,21 @@
                     <h3>Try your free trial day</h3>
                 </div>
                 <div class="content2b">
-                    <input type="name" name="name" placeholder="Name"> <br>
-                    <input type="email" name="email" id="" placeholder="Email"> <br>
-                    <input type="password" name="password" id="txtPass" placeholder="Password"> <br>
-                    <button type="submit" id="btnGet">Get started</button>
+                    <input type="name" name="name" id="name" placeholder="Name"> <i class="fa fa-exclamation" id="error"></i> <br>
+                    <input type="email" name="email" id="Email" placeholder="Email">
+                    <i class="fa fa-exclamation" id="error"></i>
+                    <br>
+                    <input type="password" name="password" id="txtPass" placeholder="Password">
+                    <i class="fa fa-exclamation" id="error"></i>
+                    <br>
+                    <button type="submit" id="btnGet" onclick="checkemptyTrial()">Get started</button>
                 </div>
              </div> 
             </div>
         </div>
       </div>
     </div>
-
+</div>
     <!-- social -->
     <div class="social">
         <div class="container">
@@ -96,12 +116,12 @@
                 <div class="col-sm-1"></div>
                 <div class="col-sm-1 col-4 location_icon">
                     <ul>
-                    <li>  <a href="#"><i class="fa fa-facebook-f fa-4x"></i></a> </li>    
+                    <li>  <i class="fa fa-facebook-f fa-4x"></i> </li>    
                     </ul>
                  </div>
                  <div class="col-sm-1 col-4 location_icon">         
                     <ul>           
-                    <li>  <a href="#"><i class="fa fa-google-plus fa-4x"></i></a> </li>
+                    <li>  <i class="fa fa-google-plus fa-4x"></i> </li>
                     </ul>
                  </div>
                  <div class="col-sm-1 col-4 location_icon">         
@@ -122,7 +142,7 @@
                    
                         <ul>
                         
-                        <li>  <i class="fa fa-wifi fa-4x  "></i></li>
+                        <li>  <i class="fa fa-twitter fa-4x  "></i></li>
                         
                         </ul>
                       
@@ -131,7 +151,7 @@
                    
                         <ul>
                         
-                        <li>  <i class="fa fa-wifi fa-4x  "></i></li>
+                        <li>  <i class="fa fa-wordpress fa-4x  "></i></li>
                         
                         </ul>
                       
@@ -150,16 +170,17 @@
                
                 
             </div>
-        </div>
-        <hr style="margin-bottom: 0;">
     </div>
+        <hr style="margin-bottom: 0;">
+    
     <!-- Tab -->
-    <div class="tab" style="background-color: #f5f5f5; margin-top: 0; height: 600px;">
+    <div class="About" id="Aboutt">
+    <div class="tab" style="background-color: #f5f5f5; margin-top: 0; ">
 
    
          <div class="container" >
              <div class="row rowcolor">
-                 <div class="col-sm-2 col-4">
+                 <div class="col-sm-2 col-12">
                     <div class="cl1">
                         <h4>TAP 1</h4>
                     </div>
@@ -170,7 +191,8 @@
                         <h4>TAP 3</h4>
                     </div>
                  </div>
-                 <div class="col-sm-6 col-8 coltabtext " style="margin-top: 145px">
+                 <!--  -->
+                 <div class="col-sm-6 col-12 coltabtext " style="margin-top: 145px" > <!--  -->
                     <h4>Tabs with soft transitioning effect</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veritatis corporis molestiae? Dolorem consequuntur dolorum consequatur eos molestiae, nostrum, excepturi id praesentium nam iure, impedit nulla eligendi obcaecati quas in!</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veritatis corporis molestiae? </p>
@@ -187,16 +209,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-12 image">
-                    <img src="image_left_sub_list_u260.png" alt="" width="460" height="300">
+                    <img src="image_left_sub_list_u260.png" alt="" >
                 </div>
                 <div class="col-sm-6 col-12 sublist">
-                    <h4>Sub list secction</h4>
+                    <h5>Sub list secction</h5>
                     <hr width="20%" align="left" color="orange">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. accusamus obcaecati blanditiis doloribus incidunt nulla odio. Facere dolorem similique quam voluptatum culpa.</p>
                    <div class="feature2">
                         <div class="iconn">
                         <img src="list_icon.png" alt="">
-                        <i class="fa fa-cloud-upload" aria-hidden="true" style="color: orange;"></i>
+                        <i class="fa fa-cloud-upload fa-o" aria-hidden="true" style="color: orange;"></i>
                         </div> 
                         <div class="list">
                             <h5>Tittle</h5>
@@ -208,7 +230,7 @@
                    <div class="feature2">
                     <div class="iconn">
                     <img src="list_icon.png" alt="">
-                    <i class="fa fa-cloud-upload" aria-hidden="true" style="color: orange;"></i>
+                    <i class="fa fa-cloud-upload " aria-hidden="true" style="color: orange;"></i>
                     </div> 
                     <div class="list">
                         <h5>Tittle</h5>
@@ -223,10 +245,10 @@
 
     <!--Standar  -->
         <div class="standar">
-            <div class="container rowcolor">
+            <div class="container">
                 <div class="row "> 
                     <div class="col-sm-6 col-12 sublist">
-                        <h4>Standar Picture session</h4>
+                        <h5>Standar Picture session</h5>
                          <hr width="20%" align="left" color="orange">
                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium placeat, eveniet laboriosam quas earum ullam culpa aliquam quaerat at nulla repellat, consequuntur vel facilis quam similique odit. Eaque, nam reprehenderit.</p>
                     </div>
@@ -253,7 +275,7 @@
                 <div class="col-sm-4 col-12">
                     <div class="iconn">
                         <img src="list_icon.png" alt="">
-                        <i class="fa fa-lightbulb-o fa-x" aria-hidden="true" style="color: orange;"></i>                     
+                        <i class="fa fa-lightbulb-o " aria-hidden="true" style="color: orange;  padding-left: 4px;"></i>                     
                     </div>  <br>
                     <div class="list1"> 
                         <h5>Well crafter</h5>
@@ -277,7 +299,7 @@
                 <div class="col-sm-4 col-12">
                     <div class="iconn">
                         <img src="list_icon.png" alt="">
-                        <i class="fa fa-bolt fa-x" aria-hidden="true"" aria-hidden="true" style="color: orange;"></i>                     
+                        <i class="fa fa-bolt" aria-hidden="true" aria-hidden="true" style="color: orange; padding-left: 4px;"></i>                     
                     </div> 
                     <br>
                     <div class="list1"> 
@@ -289,7 +311,8 @@
         </div>
 
     </div>
-    <div class="awesome" style="background-color: #f5f5f5; padding-top: 105px; height: 886px; ">
+</div>
+    <div class="awesome" id="Pricing" style="background-color: #f5f5f5; padding-top: 105px; ">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-12">
@@ -347,7 +370,7 @@
     <!-- 
 
      -->
-     <div class="awesome">
+     <div class="awesome" id="Reviews">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-12">
@@ -437,7 +460,7 @@
 
     <!-- contact -->
 
-    <div class="contact">
+    <div class="contact" id="Contact">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-12">
@@ -447,19 +470,22 @@
                 </div>
                 <div class="col-sm-6 col-12">
                     <div class="input">
-                        <input type="name" name="name" placeholder="Name"> <br>
-                         <input type="email" name="email" id="" placeholder="Email"> <br>
-                        <input type="name" name="Subject" id="txtPass" placeholder="Subject"> <br>
+                        <input type="name" name="name" id="name" placeholder="Name">
+                        <i class="fa fa-exclamation" id="error"></i> <br>
+                         <input type="email" name="email" id="email" placeholder="Email">
+                         <i class="fa fa-exclamation" id="error"></i> <br>
+                        <input type="name" name="Subject" id="name" placeholder="Subject">
+                        <i class="fa fa-exclamation" id="error"></i> <br>
                     </div>
                 </div>
-                <div class="col-sm-6 col-12">
+                <div class="col-sm-6 col-12" style="padding-left: 25px;">
                     <div class="input">
-                        <textarea name="" id="texta" cols="80" rows="8" placeholder="Message"></textarea>
+                        <textarea name="" id="texta" cols="80" rows="8" placeholder="Message"></textarea> 
                     </div>
                 </div>
                 
                     <div class="col-sm-12 col-12">
-                        <button type="button" id="btnsend">Send message</button>
+                        <button type="button" class="btn btn-warning" id="btnsend" onclick="checkempty()">Send message</button>
                     </div>
             
             </div>
